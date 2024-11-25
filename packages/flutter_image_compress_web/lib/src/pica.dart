@@ -69,6 +69,7 @@ extension CompressExt on CompressFormat {
         return 'image/webp';
       case CompressFormat.heic:
         throw UnimplementedError('heic is not support web');
+      // ignore: unreachable_switch_default
       default:
         return 'image/jpeg';
     }
